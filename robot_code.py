@@ -249,13 +249,9 @@ while True:
         robot1.motor_FR = robot1.ctr+40
 
         left_wheel.append(robot1.ctr)
-
         right_wheel.append(robot1.ctr)
-
         left_srf.append(robot1.sensor_left)
-
         right_srf.append(robot1.sensor_right)
-
         robot1.update()
 
         robot1.ctr = robot1.ctr -1
@@ -267,27 +263,19 @@ while True:
         robot1.robot_run(0,0,0,0)
 
         f = open("left_srf.txt","w")
-
         f.write(str(left_srf))
-
         f.close()
 
         f = open("right_srf.txt","w")
-
         f.write(str(right_srf))
-
         f.close()
 
         f = open("pwm_left.txt","w")
-
         f.write(str(left_wheel))
-
         f.close()
 
         f = open("pwm_right.txt","w")
-
         f.write(str(right_wheel))
-
         f.close()
 
         
